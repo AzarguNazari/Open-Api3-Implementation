@@ -1,5 +1,6 @@
 package come.swagger.example.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "student_id")
+    @JsonIgnore
     private int id;
 
     @Column(name = "student_name")
