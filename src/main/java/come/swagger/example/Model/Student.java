@@ -7,11 +7,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "student")
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Student {
 
     @Id
@@ -25,4 +23,9 @@ public class Student {
 
     @Column(name = "email")
     private String email;
+
+    public Student(String username, String email){
+        this.username = username;
+        this.email = email;
+    }
 }
