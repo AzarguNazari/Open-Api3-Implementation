@@ -20,6 +20,4 @@ public class UniversityController {
     public String getUnviersityName(){
         return university;
     }
-
-
 }

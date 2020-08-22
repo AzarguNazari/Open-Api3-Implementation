@@ -8,6 +8,8 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Arrays;
+
 @SpringBootApplication
 public class Openapi3Application implements ApplicationRunner {
 
@@ -19,14 +21,12 @@ public class Openapi3Application implements ApplicationRunner {
 	}
 
 	@Override
-	public void run(ApplicationArguments args) throws Exception {
-		Student student1 = new Student("username1", "username1@gmail.com");
-		Student student2 = new Student("username2", "username2@gmail.com");
-		Student student3 = new Student("username3", "username3@gmail.com");
-		Student student4 = new Student("username4", "username4@gmail.com");
-		studentRepository.save(student1);
-		studentRepository.save(student2);
-		studentRepository.save(student3);
-		studentRepository.save(student4);
+	public void run(ApplicationArguments args){
+		Arrays.asList(
+				Student.builder().id(1).username("username1").email("email1@example.com").build(),
+				Student.builder().id(2).username("username2").email("email3@example.com").build(),
+				Student.builder().id(3).username("username3").email("email3@example.com").build(),
+				Student.builder().id(4).username("username4").email("email4@example.com").build()
+		).forEach(studentRepository::save);
 	}
 }

@@ -13,12 +13,12 @@ import java.util.List;
 
 public interface StudentServiceInterface {
 
-    @Operation(summary = "get list of students")
+    @Operation(summary = "Get list of students")
     @GetMapping("/")
     List<Student> getAllStudents();
 
-    @ApiResponses(value = {@ApiResponse(description = "Succesfull", responseCode = "200", content = @Content(schema = @Schema(implementation = Student.class)))})
-    @Operation(summary = "get specificat student")
+    @ApiResponses(value = {@ApiResponse(description = "Successfully received student", responseCode = "200", content = @Content(schema = @Schema(implementation = Student.class)))})
+    @Operation(summary = "get student by ID")
     @GetMapping("/{studentID}")
     Student getStudentByID(@PathVariable("studentID") int id);
 }
