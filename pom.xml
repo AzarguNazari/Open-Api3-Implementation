@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.swagger.example</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1-SNAPSHOT</version>
 	<name>openapi3</name>
 	<description>Open Api 3.0 example</description>
 
@@ -42,27 +42,10 @@
 			<artifactId>classgraph</artifactId>
 			<version>4.8.44</version>
 		</dependency>
-
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.security</groupId>-->
-<!--			<artifactId>spring-security-jwt</artifactId>-->
-<!--			<version>1.0.9.RELEASE</version>-->
-<!--		</dependency>-->
-
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-hateoas</artifactId>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>com.auth0</groupId>-->
-<!--			<artifactId>java-jwt</artifactId>-->
-<!--			<version>3.8.3</version>-->
-<!--		</dependency>-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
