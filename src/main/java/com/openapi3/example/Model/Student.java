@@ -1,4 +1,4 @@
-package come.swagger.example.Model;
+package com.openapi3.example.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

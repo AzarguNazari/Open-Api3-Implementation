@@ -1,6 +1,6 @@
-package come.swagger.example.Repositories;
+package com.openapi3.example.Repositories;
 
-import come.swagger.example.Model.Student;
+import com.openapi3.example.Model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository extends JpaRepository<Student, Integer> {

@@ -1,7 +1,7 @@
-package come.swagger.example;
+package com.openapi3.example;
 
-import come.swagger.example.Model.Student;
-import come.swagger.example.Repositories.StudentRepository;
+import com.openapi3.example.Model.Student;
+import com.openapi3.example.Repositories.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

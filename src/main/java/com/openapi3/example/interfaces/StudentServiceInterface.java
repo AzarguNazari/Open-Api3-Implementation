@@ -1,6 +1,6 @@
-package come.swagger.example.interfaces;
+package com.openapi3.example.interfaces;
 
-import come.swagger.example.Model.Student;
+import com.openapi3.example.Model.Student;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

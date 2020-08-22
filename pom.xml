@@ -8,8 +8,8 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.swagger.example</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.openapi3.example</groupId>
+	<artifactId>open-api-3</artifactId>
 	<version>1-SNAPSHOT</version>
 	<name>openapi3</name>
 	<description>Open Api 3.0 example</description>
