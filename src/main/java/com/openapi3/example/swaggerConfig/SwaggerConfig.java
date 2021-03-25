@@ -19,11 +19,11 @@ public class SwaggerConfig {
 
     @Bean
     public GroupedOpenApi studentGroup(){
-        return GroupedOpenApi.builder().setGroup("Student Group").pathsToMatch("/api/students/**").build();
+        return GroupedOpenApi.builder().group("Student Group").pathsToMatch("/api/students/**").build();
     }
 
     @Bean
     public GroupedOpenApi universityGroup(){
-        return GroupedOpenApi.builder().setGroup("University Group").pathsToMatch("/api/university/**").build();
+        return GroupedOpenApi.builder().group("University Group").pathsToMatch("/api/university/**").build();
     }
 }
