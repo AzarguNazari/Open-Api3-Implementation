@@ -30,6 +30,8 @@ public class Openapi3Application implements ApplicationRunner {
 		).forEach(studentRepository::save);
 	}
 
+
+
 	/*
 		webflux
 		@Bean
