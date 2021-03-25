@@ -14,16 +14,27 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI openApi(){
-        return new OpenAPI().info(new Info().title("Student API").version("1.1.1").termsOfService("www.example.com/tersmofservice").license(new License().name("Licence")));
+
+        return new OpenAPI().info(new Info()
+                            .title("Student API")
+                            .version("1.1.1")
+                            .termsOfService("www.example.com/tersmofservice")
+                            .license(new License().name("Apache 2.0").url("http://springdoc.org")));
     }
 
     @Bean
     public GroupedOpenApi studentGroup(){
-        return GroupedOpenApi.builder().setGroup("Student Group").pathsToMatch("/api/students/**").build();
+        return GroupedOpenApi.builder()
+                             .group("Student Group")
+                             .pathsToMatch("/api/students/**")
+                             .build();
     }
 
     @Bean
     public GroupedOpenApi universityGroup(){
-        return GroupedOpenApi.builder().setGroup("University Group").pathsToMatch("/api/university/**").build();
+        return GroupedOpenApi.builder()
+                             .group("University Group")
+                             .pathsToMatch("/api/university/**")
+                             .build();
     }
 }

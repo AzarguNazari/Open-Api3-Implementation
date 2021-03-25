@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.2.RELEASE</version>
+		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.openapi3.example</groupId>
@@ -23,12 +23,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.2.28</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-webmvc-core</artifactId>
-			<version>1.2.28</version>
+			<version>1.5.2</version>
 		</dependency>
 
 		<dependency>
@@ -49,6 +44,61 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+
+		<!-- open api -->
+<!--		<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-webmvc-core</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
+		<!-- webflux -->
+<!--		<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-webflux-ui</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
+
+<!--		<!- hateus ->-->
+<!--		<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-hateoas</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
+
+		<!-- data rest api ->
+		<!-	<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-data-rest</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
+<!--		SpringDocUtils.getConfig().replaceWithClass(org.springframework.data.domain.Pageable.class,-->
+<!--		org.springdoc.core.converters.models.Pageable.class);-->
+
+		<!-- for security support -->
+<!--		<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-security</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
+
+		<!-- for groovy -->
+<!--		<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-groovy</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
+
+		<!-- for kotlin -->
+<!--		<dependency>-->
+<!--			<groupId>org.springdoc</groupId>-->
+<!--			<artifactId>springdoc-openapi-kotlin</artifactId>-->
+<!--			<version>1.5.6</version>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>
